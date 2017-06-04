@@ -1,11 +1,11 @@
-#hdu1003Max Sum
+# hdu1003Max Sum
 
 http://acm.hdu.edu.cn/showproblem.php?pid=1003
 
-##思路
+## 思路
 最大子段和，状态方程f[i] = max(a[i], f[i - 1] + a[i])，这里要同时输出最大子段的开始和结束位置。实际上，我们知道，在求最大子段的时候如果当前数字加入到子段里使子段和小于0,那就说明这个数肯定不能加入到子段里去，用这种数来分段，每加一个数和当前最大子段去比较取最大的即可。
 
-##代码
+## 代码
 ```
 #include <cstdio>
 #include <iostream>
